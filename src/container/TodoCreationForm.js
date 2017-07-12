@@ -1,6 +1,8 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { addTodo } from '../actions';
 
-export class TodoCreationForm extends React.Component {
+class TodoCreationForm extends React.Component {
   constructor(props) {
     super(props);
 
@@ -45,3 +47,7 @@ export class TodoCreationForm extends React.Component {
     )
   }
 }
+
+TodoCreationForm = connect()(TodoCreationForm);
+
+export default TodoCreationForm;

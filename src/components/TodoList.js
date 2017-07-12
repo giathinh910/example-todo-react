@@ -1,5 +1,5 @@
 import React from 'react';
-import { TodoCreationForm } from './TodoCreationForm';
+import TodoCreationForm from '../container/TodoCreationForm';
 import { TodoItem } from "./TodoItem";
 import _ from "lodash";
 
