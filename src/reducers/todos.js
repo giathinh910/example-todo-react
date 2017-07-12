@@ -3,9 +3,9 @@ const todos = (state = [], action) => {
     case 'TODO_CREATE':
       return [
         {
-          title: action.title,
-          desc: action.desc,
-          createdAt: action.createdAt,
+          title: action.todo.title,
+          desc: action.todo.desc,
+          createdAt: action.todo.createdAt,
           status: 'todo'
         },
         ...state

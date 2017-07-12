@@ -5,10 +5,10 @@ export const addTodo = todo => {
   }
 };
 
-export const updateTodo = todo => {
+export const updateTodo = modifiedTodo => {
   return {
     type: 'TODO_UPDATE',
-    todo
+    modifiedTodo
   }
 };
 

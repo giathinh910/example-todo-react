@@ -25,7 +25,7 @@ class TodoCreationForm extends React.Component {
   handleSubmit(event) {
     let newTodo = this.state;
     newTodo.createdAt = new Date().getTime();
-    this.props.submitTodoCallback(newTodo);
+    this.props.dispatch(addTodo(newTodo));
     this.setState({
       title: '',
       desc: ''
